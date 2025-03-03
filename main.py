@@ -4,7 +4,6 @@ import logging
 import os
 import re
 
-from scrapingbee import ScrapingBeeClient
 import scrapetube
 from youtube_transcript_api import YouTubeTranscriptApi
 # some provided subclasses, each outputs a different string format.
@@ -130,6 +129,7 @@ def analyze_transcripts():
     # the order `os.listdir` returns is arbitrary, so sort to keep consistent.
     all_transcript_files = sorted(os.listdir(TARGET_DATA_DIRECTORY))
     num_files = len(all_transcript_files)
+    files_with_mentions = 0
     total_mentions = 0
     for transcript_file in all_transcript_files:
         with open(os.path.join(TARGET_DATA_DIRECTORY, transcript_file), "r") as f:
@@ -137,13 +137,14 @@ def analyze_transcripts():
             num_mentions_here = len(re.findall(r'\bcase(?:-|(?=\b))', text))
             logger.info(f"{num_mentions_here} mentions in {transcript_file}")
             total_mentions += num_mentions_here
+            if num_mentions_here:
+                files_with_mentions += 1
 
     logger.info(f"Total number of video transcripts reviewed: {num_files}")
     logger.info(f"Total case mentions: {total_mentions}")
     logger.info(f"Avg mentions per file: {total_mentions/num_files}")
+    logger.info(f"Percent of videos with mention: {(files_with_mentions/num_files)*100}%")
 
 if __name__ == "__main__":
-    # get_transcripts_from_youtube()
+    get_transcripts_from_youtube()
     analyze_transcripts()
-    pass
-    breakpoint()

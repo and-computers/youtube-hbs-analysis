@@ -4,9 +4,9 @@
 
 I was curious to know how many times "case" and related concepts are mentioned within Harvard Business School's youtube videos. I was trying to prove a point that the school is almost comically insufferable about how great case-based discussions are. The script is quick and messy.
 
-
 ### Results
-These are really imperfect because transcripts through this method aren't always accurate, a number of videos had no transcripts, and a great number of them were missing significant portions of the content of the video. And yet.. almost 1 and a half times a video over the past ~14 years :sweat-smile: 
+
+These are really imperfect because transcripts through this method aren't always accurate, a number of videos had no transcripts, and a great number of them were missing significant portions of the content of the video. And yet.. almost 1 and a half times a video over the past ~14 years :sweat-smile:
 
 ```
 ...
@@ -33,8 +33,8 @@ These are really imperfect because transcripts through this method aren't always
 Total number of video transcripts reviewed: 1401
 Total case mentions: 1910
 Avg mentions per file: 1.363311920057102
+Percent of videos with mention: 30.8%
 ```
-
 
 ### Setting up Local Environment
 
