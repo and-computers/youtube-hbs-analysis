@@ -1,0 +1,5 @@
+requests
+scrapetube
+# youtube-transcript-api==0.6.1 (not using direct bc the fork has no support for verify parameter to use with proxies)
+scrapingbee==2.0.1
+git+https://github.com/marcelodiaz558/youtube-transcript-api.git@master
