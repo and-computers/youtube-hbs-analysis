@@ -6,7 +6,7 @@ I was curious to know how many times "case" and related concepts are mentioned w
 
 ### Results
 
-These are really imperfect because transcripts through this method aren't always accurate, a number of videos had no transcripts, and a great number of them were missing significant portions of the content of the video. And yet.. almost 1 and a half times a video over the past ~14 years :sweat-smile:
+These are really imperfect because transcripts through this method aren't always accurate, a number of videos had no transcripts, and a great number of them were missing significant portions of the content of the video. And yet.. almost 1 and a half times a video over the past ~16 years :sweat-smile:
 
 ```
 ...
